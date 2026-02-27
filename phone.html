@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Section</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- <style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter,sans-serif;
+}
+
+body{
+  background:#f3f3f3;
+}
+
+.section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:80px;
+  padding:80px 40px;
+}
+
+/* LEFT */
+.left{
+  width:320px;
+}
+
+.left h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.left p{
+  color:#555;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+.btn{
+  background:#0a1033;
+  color:#fff;
+  padding:14px 22px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* PHONE */
+.phone{
+  width:380px;
+  height:800px;
+  background:#eee;
+  border-radius:40px;
+  /* padding:20px; */
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+  position:relative;
+  overflow:hidden;
+}
+
+/* CAROUSEL */
+.carousel{
+  display:flex;
+  width:100%;
+  height:100%;
+  transition:transform .6s ease;
+}
+
+.slide{
+  min-width:100%;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:20px;
+  animation:fade .6s;
+  background-image: url("images/WhatsApp Image.jpeg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .slide2{
+  min-width:100%;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:20px;
+  animation:fade .6s;
+  background-image: url("images/WhatsApp Image.jpeg");
+
+  background-size: contain;
+}
+.slide3{
+  min-width:100%;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:20px;
+  animation:fade .6s;
+  background-image: url("images/WhatsApp Image.jpeg");
+
+  background-size: contain;
+} */
+
+@keyframes fade{
+  from{opacity:0; transform:translateX(30px);}
+  to{opacity:1; transform:translateX(0);}
+}
+
+.balance{
+  text-align:right;
+  font-weight:600;
+}
+
+.pay-title{
+  font-size:22px;
+  font-weight:800;
+  margin-top:80px;
+}
+
+.option{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:14px;
+  border-radius:12px;
+  background:#fff;
+  transition:.3s;
+  cursor:pointer;
+}
+
+.option:hover{
+  transform:translateX(8px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ARROWS */
+.arrows{
+  position:absolute;
+  bottom:20px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:0 20px;
+}
+
+.arrow{
+  width:40px;
+  height:40px;
+  background:#111;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.arrow:hover{
+  transform:scale(1.1);
+}
+
+/* RIGHT */
+.right{
+  width:320px;
+}
+
+.block{
+  margin-bottom:50px;
+}
+
+.block h3{
+  margin-bottom:10px;
+}
+
+.block p{
+  color:#555;
+  line-height:1.6;
+}
+
+.learn{
+  color:#ff4d00;
+  margin-top:10px;
+  display:inline-block;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.learn:hover{
+  transform:translateX(5px);
+}
+
+@media(max-width:1000px){
+.section{
+  flex-direction:column;
+}
+}
+</style> -->
+</head>
+
+<body>
+
+<div class="section">
+
+<!-- LEFT -->
+<div class="left">
+  <h2>Online Checkout</h2>
+  <p>
+    Our online checkout features our smart payment ordering system,
+    incredible speed, and beautiful simplicity.
+  </p>
+  <button class="btn">Get started</button>
+</div>
+
+<!-- PHONE CAROUSEL -->
+<div class="phone">
+
+<div class="carousel" id="carousel">
+
+  <!-- SLIDE 1 -->
+  <div class="slide">
+    <!-- <div class="balance">NGN 2,560.68</div>
+    <div class="pay-title">How would you like to pay?</div>
+
+    <div class="option">💳 Card</div>
+    <div class="option"># USSD</div>
+    <div class="option">🏦 Bank</div>
+    <div class="option">🔳 QR</div>
+    <div class="option">🔁 Barter</div> -->
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide">
+    <div class="balance">Wallet</div>
+    <div class="pay-title">Transfer money</div>
+
+    <div class="option">Send to bank</div>
+    <div class="option">Send to user</div>
+    <div class="option">Scheduled transfer</div>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="slide">
+    <div class="balance">History</div>
+    <div class="pay-title">Recent payments</div>
+
+    <div class="option">Netflix - ₦3,000</div>
+    <div class="option">Transfer - ₦20,000</div>
+    <div class="option">Airtime - ₦1,500</div>
+  </div>
+
+</div>
+
+<!-- <div class="arrows">
+  <div class="arrow" onclick="prev()">‹</div>
+  <div class="arrow" onclick="next()">›</div>
+</div> -->
+
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+
+<div class="block">
+  <h3>Accept payments</h3>
+  <p>Easily receive money from anyone, anywhere in the world.</p>
+  <div class="learn">Learn more →</div>
+</div>
+
+<div class="block">
+  <h3>Transfers (Payout)</h3>
+  <p>Make single or bulk transfers to bank accounts easily.</p>
+  <div class="learn">Learn more →</div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+let index = 0;
+const carousel = document.getElementById("carousel");
+const total = document.querySelectorAll(".slide").length;
+
+function update(){
+  carousel.style.transform = `translateX(-${index*100}%)`;
+}
+
+function next(){
+  index = (index + 1) % total;
+  update();
+}
+
+function prev(){
+  index = (index - 1 + total) % total;
+  update();
+}
+
+// auto slide
+setInterval(next,4000);
+</script>
+
+</body>
+</html>

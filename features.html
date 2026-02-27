@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="features.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="phone.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter",sans-serif;
+}
+
+body{
+  background:#eef2f7;
+  color:#222;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  padding:60px 0;
+}
+
+/* GRID */
+
+.services-grid{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:25px;
+}
+
+.card{
+  background:#fff;
+  border-radius:20px;
+  padding:25px;
+  min-height:160px;
+  cursor:pointer;
+  transition:0.3s;
+  border:1px solid #e6e6e6;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 20px rgba(23,167,154,0.15);
+}
+
+.card.active{
+  background:linear-gradient(135deg,#17A79A,#4fc4b7);
+  color:#fff;
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:14px;
+  opacity:0.8;
+}
+
+/* FEATURE PREVIEW */
+
+.feature-preview{
+  margin-top:120px;
+  display:none;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  justify-content:space-between;
+  gap:140px;
+}
+
+.feature-text{
+  max-width:500px;
+}
+
+.feature-text h2{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.feature-text p{
+  color:#6E6E6E;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+.feature-text button{
+  padding:14px 26px;
+  background:#FF6B35;
+  color:#fff;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.feature-text button:hover{
+  background:#e85e2f;
+}
+
+/* PHONE */
+
+.phone{
+  width:320px;
+  height:620px;
+  background:#F2F2F2;
+  border-radius:40px;
+  box-shadow:0 20px 40px rgba(23,167,154,0.2);
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+}
+
+.phone h3{
+  color:#17A79A;
+  margin-bottom:15px;
+}
+
+.phone p{
+  font-size:14px;
+  color:#6E6E6E;
+}
+
+@media(max-width:900px){
+  .services-grid{
+    grid-template-columns:1fr;
+  }
+  .feature-preview{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="site-wrapper">
+ <div class="navbar">
+        <div class="logo">Mo<span>Route</span></div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="#">Features</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+        <!-- <div class="address-chip">
+            <i class="fas fa-map-marker-alt"></i> Medychnyi Avenue, 8-A, Lviv
+        </div> -->
+    </div>
+<div class="container">
+
+
+
+<h1>App Features</h1>
+<p style="color:#6E6E6E;margin-bottom:40px;">
+Click any feature to preview it.
+</p>
+
+<!-- 9 CARDS -->
+<div class="services-grid">
+
+<div class="card" data-title="Safe Routes" data-desc="Plan safer journeys using AI-powered security data." data-btn="Explore Safe Routes">
+
+<h3>Safe Routes</h3>
+<p>Smart safety navigation.</p>
+  <a class="learn" data-btn="Explore Safe Routes">Learn more →</a>
+</div>
+
+<div class="card" data-title="SOS Emergency" data-desc="Send instant emergency alerts to trusted contacts." data-btn="Activate SOS">
+<h3>SOS Emergency</h3>
+<p>One-tap emergency support.</p>
+  <a class="learn" data-btn="Activate SOS">Learn more →</a>
+</div>
+
+<div class="card" data-title="Community Reports" data-desc="Get live safety updates from verified users." data-btn="View Reports">
+<h3>Community Reports</h3>
+<p>Real-time area alerts.</p>
+  <a class="learn" data-btn="View Reports">Learn more →</a>
+</div>
+
+<div class="card" data-title="Location Tracking" data-desc="Share your live location with family and friends." data-btn="Start Tracking">
+<h3>Location Tracking</h3>
+<p>Live GPS sharing.</p>
+  <a class="learn" data-btn="View Reports">Learn more →</a>
+</div>
+
+<div class="card" data-title="AI Risk Detection" data-desc="Advanced AI detects high-risk areas automatically." data-btn="Scan Area">
+<h3>AI Risk Detection</h3>
+<p>Smart danger alerts.</p>
+  <a class="learn" data-btn="View Reports">Learn more →</a>
+</div>
+
+<div class="card" data-title="Emergency Contacts" data-desc="Manage and notify your emergency contact list." data-btn="Manage Contacts">
+<h3>Emergency Contacts</h3>
+<p>Quick contact access.</p>
+  <a class="learn" data-btn="View Reports">Learn more →</a>
+</div>
+
+<div class="card" data-title="Night Mode Safety" data-desc="Enhanced visibility tools for nighttime travel." data-btn="Enable Night Mode">
+<h3>Night Mode Safety</h3>
+<p>Safer night navigation.</p>
+  <a class="learn" data-btn="View Reports">Learn more →</a>
+</div>
+
+<div class="card" data-title="Voice Alert" data-desc="Trigger alerts using voice commands." data-btn="Activate Voice Alert">
+<h3>Voice Alert</h3>
+<p>Hands-free protection.</p>
+  <a class="learn" data-btn="View Reports">Learn more →</a>
+</div>
+
+<div class="card" data-title="Safe Zones" data-desc="Mark and discover verified safe areas nearby." data-btn="View Safe Zones">
+<h3>Safe Zones</h3>
+<p>Trusted secure locations.</p>
+  <a class="learn" data-btn="View Reports">Learn more →</a>
+</div>
+
+</div>
+
+<!-- FEATURE PREVIEW -->
+<div class="feature-preview" id="preview">
+
+<div class="feature-text">
+<h2 id="title"></h2>
+<p id="desc"></p>
+<button class="playstore">try feature</button>
+</div>
+
+<div class="phone">
+<h3 id="phoneTitle"></h3>
+<p>This preview represents how the feature appears inside the mobile app.</p>
+</div>
+
+</div>
+
+</div>
+</div>
+<script>
+const cards = document.querySelectorAll(".card");
+const preview = document.getElementById("preview");
+const title = document.getElementById("title");
+const desc = document.getElementById("desc");
+const phoneTitle = document.getElementById("phoneTitle");
+const actionBtn = document.getElementById("actionBtn");
+
+cards.forEach(card => {
+  card.addEventListener("click", function(){
+
+    // Remove active from all cards
+    cards.forEach(c => c.classList.remove("active"));
+
+    // Activate clicked
+    this.classList.add("active");
+
+    // Get data
+    const newTitle = this.dataset.title;
+    const newDesc = this.dataset.desc;
+    const newBtn = this.dataset.btn;
+
+    // Update content
+    title.textContent = newTitle;
+    desc.textContent = newDesc;
+    phoneTitle.textContent = newTitle;
+    // actionBtn.textContent = newBtn;
+
+    // Show preview section
+    preview.style.display = "grid";
+
+    // Smooth scroll
+    preview.scrollIntoView({ behavior: "smooth" });
+
+  });
+});
+</script>
+
+</body>
+</html>
