@@ -51,10 +51,12 @@
     <div class="contact-form">
       <h3>Send Us a Message</h3>
 
-      <form>
+<form action="https://formsubmit.co/mshittu234@gmail.com.com" method="POST">
         <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea placeholder="How can we help you?" required></textarea>
+        <input type="email" placeholder="Email Address" name="email" required>
+        <textarea placeholder="How can we help you?" class="message" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+
         <button type="submit" class="store-btn playstore">Submit Request</button>
       </form>
 
