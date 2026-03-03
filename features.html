@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="phone.css">
 
-<style>
+<!-- <style>
 *{
   margin:0;
   padding:0;
@@ -54,7 +54,7 @@ body{
 }
 
 .card.active{
-  background:linear-gradient(135deg,#17A79A,#4fc4b7);
+  background:#FF6B35;
   color:#fff;
 }
 
@@ -141,7 +141,7 @@ body{
     gap:50px;
   }
 }
-</style>
+</style> -->
 </head>
 <body>
   <div class="site-wrapper">
@@ -162,65 +162,104 @@ body{
 
 <h1>App Features</h1>
 <p style="color:#6E6E6E;margin-bottom:40px;">
-Click any feature to preview it.
+MoRoute is a mobile application designed to enhance road safety and security for
+travellers in Nigeria. The app integrates incident reporting, proactive ahead-of-route alerts,
+emergency SOS features, and resilience in low connectivity or low battery conditions. It ensures
+that travellers can receive and send alerts even in challenging environments.
 </p>
 
 <!-- 9 CARDS -->
 <div class="services-grid">
 
-<div class="card" data-title="Safe Routes" data-desc="Plan safer journeys using AI-powered security data." data-btn="Explore Safe Routes">
-
-<h3>Safe Routes</h3>
-<p>Smart safety navigation.</p>
-  <a class="learn" data-btn="Explore Safe Routes">Learn more →</a>
+<div class="card" 
+data-title="Report Incident" 
+data-desc="Report and stay informed about kidnappings, robberies, accidents, roadblocks, suspicious activity, and checkpoints in your area. Users can submit real-time reports with location details, images, and descriptions. All reports are reviewed and displayed on the safety map to help others avoid dangerous zones and make informed travel decisions."
+data-btn="Explore Safe Routes"
+data-img="images/WhatsApp Image 2026-03-03 at 1.13.28 AM.jpeg">
+<h3>Report Incident</h3>
+<p>Report and view kidnappings, robberies, accidents, roadblocks, and
+checkpoints.</p>
+<a class="learn">Learn more →</a>
 </div>
 
-<div class="card" data-title="SOS Emergency" data-desc="Send instant emergency alerts to trusted contacts." data-btn="Activate SOS">
+<div class="card" 
+data-title="SOS Emergency" 
+data-desc="Send a one-tap distress signal to your emergency contacts and, where available, local authorities. Your live GPS location, movement status, and time stamp are instantly shared to ensure rapid response. Designed for critical situations where speed and accuracy are essential."
+data-img="images/WhatsApp Image 2026-03-03 at 1.13.27 AM (3).jpeg">
 <h3>SOS Emergency</h3>
-<p>One-tap emergency support.</p>
-  <a class="learn" data-btn="Activate SOS">Learn more →</a>
+<p>One-tap distress signal to emergency contacts and authorities with GPS
+location.</p>
+<a class="learn">Learn more →</a>
 </div>
 
-<div class="card" data-title="Community Reports" data-desc="Get live safety updates from verified users." data-btn="View Reports">
+<div class="card" 
+data-title="Community Reports" 
+data-desc="Benefit from crowdsourced, real-time safety updates submitted by other users nearby. See verified alerts about potential threats, unusual activity, or unsafe areas. Community-driven intelligence strengthens awareness and helps keep everyone safer."
+data-btn="Live Safety Map"
+data-img="images/WhatsApp Image 2026-03-03 at 1.13.26 AM.jpeg">
 <h3>Community Reports</h3>
-<p>Real-time area alerts.</p>
-  <a class="learn" data-btn="View Reports">Learn more →</a>
+<p> Crowdsourced real-time safety information from other users.</p>
+<a class="learn">Learn more →</a>
 </div>
 
-<div class="card" data-title="Location Tracking" data-desc="Share your live location with family and friends." data-btn="Start Tracking">
-<h3>Location Tracking</h3>
-<p>Live GPS sharing.</p>
-  <a class="learn" data-btn="View Reports">Learn more →</a>
+<div class="card" 
+data-title="Route Planning" 
+data-desc="Compare multiple routes not just by distance or time, but by safety score. Receive weather updates, road condition alerts, and the ability to download offline maps for areas with limited connectivity. Travel smarter with routes optimized for both efficiency and security."
+data-btn="Start Tracking"
+data-img="images/WhatsApp Image.jpeg">
+<h3>Route Planning</h3>
+<p>Compare routes by safety score, get weather updates, offline maps.</p>
+<a class="learn">Learn more →</a>
 </div>
 
-<div class="card" data-title="AI Risk Detection" data-desc="Advanced AI detects high-risk areas automatically." data-btn="Scan Area">
-<h3>AI Risk Detection</h3>
-<p>Smart danger alerts.</p>
-  <a class="learn" data-btn="View Reports">Learn more →</a>
+<div class="card" 
+data-title="Checkpoint Verification" 
+data-desc="Avoid fake or unauthorized checkpoints by verifying legitimate police or military stops through community confirmation and official data sources. View verification status, report suspicious checkpoints, and receive alerts before approaching high-risk stops."
+data-btn="Scan Area"
+data-img="images/WhatsApp Image 2026-02-27 at 10.31.55 PM (1).jpeg">
+<h3>Checkpoint Verification</h3>
+<p>Verify if police/military checkpoints are legitimate to avoid fake
+checkpoints.</p>
+<a class="learn">Learn more →</a>
 </div>
 
-<div class="card" data-title="Emergency Contacts" data-desc="Manage and notify your emergency contact list." data-btn="Manage Contacts">
+<div class="card" 
+data-title="Trip Analytics" 
+data-desc="Track your journey history, analyze travel patterns, and review safety insights over time. See risk levels along your routes, frequently visited areas, and personalized recommendations to improve your safety habits."
+data-img="images/WhatsApp Image 2026-02-27 at 10.32.52 PM.jpeg">
+<h3>Trip Analytics</h3>
+<p>Track journey safety, view history, and safety patterns.</p>
+<a class="learn">Learn more →</a>
+</div>
+
+<div class="card" 
+data-title="Safety Snapshots" 
+data-desc="Capture photos or short videos directly within the app to document incidents or suspicious activity. Each snapshot is securely stored with time and location data, creating reliable records that can be shared with trusted contacts or authorities if necessary."
+data-btn="Enable Night Mode"
+data-img="images/WhatsApp Image 2026-03-03 at 1.13.27 AM.jpeg">
+<h3>Safety Snapshots</h3>
+<p> Capture and store evidence (photos/videos) with location.</p>
+<a class="learn">Learn more →</a>
+</div>
+
+<div class="card" 
+data-title="Live Safety Map" 
+data-desc="Access a dynamic, real-time map that displays active incidents, high-risk zones, verified checkpoints, and safe areas. The map updates continuously using AI analysis and community reports, giving you a clear visual overview of your surroundings before and during your journey."
+data-btn="Activate Voice Alert"
+data-img="images/WhatsApp Image 2026-02-27 at 10.31.55 PM (2).jpeg">
+<h3>Live Safety Map</h3>
+<p>Visual map showing active incidents, danger zones, and verified checkpoints.</p>
+<a class="learn">Learn more →</a>
+</div>
+
+<div class="card" 
+data-title="Emergency Contacts" 
+data-desc="Securely store trusted contacts within the app and automatically notify them during emergencies. Customize alert preferences, choose who gets notified for specific situations, and share live tracking details when needed."
+data-btn="View Safe Zones"
+data-img="images/WhatsApp Image 2026-03-03 at 6.41.35 PM.jpeg">
 <h3>Emergency Contacts</h3>
-<p>Quick contact access.</p>
-  <a class="learn" data-btn="View Reports">Learn more →</a>
-</div>
-
-<div class="card" data-title="Night Mode Safety" data-desc="Enhanced visibility tools for nighttime travel." data-btn="Enable Night Mode">
-<h3>Night Mode Safety</h3>
-<p>Safer night navigation.</p>
-  <a class="learn" data-btn="View Reports">Learn more →</a>
-</div>
-
-<div class="card" data-title="Voice Alert" data-desc="Trigger alerts using voice commands." data-btn="Activate Voice Alert">
-<h3>Voice Alert</h3>
-<p>Hands-free protection.</p>
-  <a class="learn" data-btn="View Reports">Learn more →</a>
-</div>
-
-<div class="card" data-title="Safe Zones" data-desc="Mark and discover verified safe areas nearby." data-btn="View Safe Zones">
-<h3>Safe Zones</h3>
-<p>Trusted secure locations.</p>
-  <a class="learn" data-btn="View Reports">Learn more →</a>
+<p> Store and auto-alert trusted contacts during emergencies.</p>
+<a class="learn">Learn more →</a>
 </div>
 
 </div>
@@ -236,14 +275,14 @@ Click any feature to preview it.
 
 <div class="phone">
 <h3 id="phoneTitle"></h3>
-<p>This preview represents how the feature appears inside the mobile app.</p>
+<!-- <p>This preview represents how the feature appears inside the mobile app.</p> -->
 </div>
 
 </div>
 
 </div>
 </div>
-<script>
+<!-- <script>
 const cards = document.querySelectorAll(".card");
 const preview = document.getElementById("preview");
 const title = document.getElementById("title");
@@ -279,7 +318,47 @@ cards.forEach(card => {
 
   });
 });
-</script>
+</script> -->
 
+
+
+
+<script>
+const cards = document.querySelectorAll(".card");
+const preview = document.getElementById("preview");
+const title = document.getElementById("title");
+const desc = document.getElementById("desc");
+const phoneTitle = document.getElementById("phoneTitle");
+const phone = document.querySelector(".phone");
+
+
+cards.forEach(card => {
+  card.addEventListener("click", function(){
+
+    cards.forEach(c => c.classList.remove("active"));
+    this.classList.add("active");
+
+    const newTitle = this.dataset.title;
+    const newDesc = this.dataset.desc;
+    const newImg = this.dataset.img;
+
+    title.textContent = newTitle;
+    desc.textContent = newDesc;
+    // phoneTitle.textContent = newTitle;
+
+    // Add background image to phone
+    phone.style.backgroundImage = `url('${newImg}')`;
+    phone.style.backgroundSize = "cover";
+    phone.style.backgroundPosition = "center";
+    phone.style.backgroundRepeat = "no-repeat";
+
+    preview.style.display = "grid";
+    preview.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+
+
+</script>
 </body>
 </html>

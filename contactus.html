@@ -38,8 +38,8 @@
       </p>
 
       <div class="download-buttons">
-        <button class="store-btn applestore">playstore</button>
-        <button class="store-btn applestore">applestore</button>
+        <button class="store-btn applestore"  onclick="showAlert()">playstore</button>
+        <button class="store-btn applestore" onclick="showAlert()">applestore</button>
       </div>
 
       <p>
@@ -51,10 +51,10 @@
     <div class="contact-form">
       <h3>Send Us a Message</h3>
 
-<form action="https://formsubmit.co/mshittu234@gmail.com" method="POST">
+<form action="https://formspree.io/f/mnjbeadv" method="POST">
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email Address" name="email" required>
-        <textarea placeholder="How can we help you?" class="message" required></textarea>
+        <textarea placeholder="How can we help you?" class="message" id="message" name="message" required></textarea>
         <input type="hidden" name="_captcha" value="false">
 
         <button type="submit" class="store-btn playstore">Submit Request</button>
@@ -68,3 +68,10 @@
     </div>
 </body>
 </html>
+
+<script>
+
+function showAlert() {
+  alert("Coming soon!");
+}
+</script>
